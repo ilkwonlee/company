@@ -1,0 +1,173 @@
+﻿<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+		<title>더존비즈온</title>
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"/>
+		<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+		<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+		<style>
+			li {
+				list-style: none;
+			}
+			.picture {
+				list-style: none;
+				padding: 0;
+				margin: 0;
+			}
+			.picture li {
+				float: left;
+				width: 50%;
+			}
+			.picture li a {
+				display: block;
+				margin: 5px;
+				border: 1px
+			}
+			.picture li img {
+				display: block;
+				width: 50%;
+				height: auto;
+			}
+			.picture li img:hover {
+				display: block;
+				width: 100%;
+				height: auto;
+			}
+		</style>
+
+	</head>
+
+	<body>
+		<div data-role="page" id="home">
+			<div data-role="header" style="height:50px;"data-theme="a">
+				<center>
+					<img src="thezone.jpg">
+				</center>
+				<a href="#panel1" data-iconpos="notext" data-icon="bars" class="ui-btn-right" style="margin-top:3px;"></a>
+			</div>
+
+			<div data-role="content" style="text-align:center padding : 0px;">
+				<img src="bgdokdo1.png" style="max-width: 100%; height: auto;">
+			</div>
+
+			<div data-role="footer" data-position="fixed">
+				<h1>(주)더존비즈온 1688-5000, Copyright &copy; 2018 IlKwon,Lee</h1>
+			</div>
+			<div data-role="panel" id="panel1" data-display="overlay" data-position="right">
+				<ul data-role="listview" data-inset="true">
+					<li>
+						<a href="#intro" data-transition="slidefade">더존소개</a>
+					</li>
+					<li>
+						<a href="#movie" rel="external" data-rel="dialog">더존영상</a>
+					</li>
+					<li>
+						<a href="#gallery" rel="external">더존사진</a>
+					</li>
+					<li>
+						<a href="#" data-rel="close">돌아가기</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<div data-role="page" id="intro">
+			<div data-role="header">
+				<a href="#home" data-icon="arrow-l" data-direction="reverse" data-transition="slidefade">처음</a>
+				<h1>더존 소개</h1>
+			</div>
+			<div data-role="content">
+				<div  style="text-align:center">
+					<img src="dzon5.jpg" style="max-width: 100%; height: auto;">
+				</div>
+				<div data-role="collapsible-set" data-content-theme="e">
+					<div data-role="collapsible" data-collapsed="false">
+						<h3>더존이란?</h3>
+						<p>
+							기업정보화 선도기업인 더존은 정보화에 필요한 각종 Solution과 Service를 제공하는 대한민국 대표 IT기업으로 고객의 경쟁력 강화에 기여해 왔습니다.
+						</p>
+					</div>
+					<div data-role="collapsible">
+						<h3>더존 개발 분야</h3>
+						<p>
+							더존은 회계프로그램 뿐만 아니라 ERP, IFRS솔루션, 그룹웨어, 정보보호, 전자세금계산서 등기업 정보화 소프트웨어 분야에서 시장 점유율 1위 기업입니다.
+						</p>
+					</div>
+					<div data-role="collapsible" >
+						<h3>더존의 미래</h3>
+						<p>
+							ERP전문 IT기업으로 시장을 개척한 더존은 클라우드, 모바일 등 최첨단 기술을 통해 기업이 나아갈 바를 정확히 알고 기업의 탄생과 성장에 반드시 필요한 심장과 같은 역할을 수행하며 그 비전을 만들어 가고 있습니다.
+						</p>
+					</div>
+				</div>
+			</div>
+			<div data-role="footer" data-position="fixed">
+				<h1>(주)더존비즈온 1688-5000, Copyright &copy; 2018 IlKwon,Lee</h1>
+			</div>
+		</div>
+
+		<div data-role="dialog" id="movie">
+			<div data-role="header" data-position="fixed" data-theme="b" data-transition="pop">
+				<h1>VIDEO</h1>
+			</div>
+			<div data-role="content" >
+				<div class="ui-bar ui-bar-e">
+					<center>
+						<font size="5" face="궁서">더존 비즈온 홍보영상</font>
+					</center>
+				</div>
+				<li>
+					<iframe width="100%" height="240" src="https://www.youtube.com/embed/PL9iyA3dZ9I" frameborder="0" allowfullscreen></iframe>
+				</li>
+				<br/>
+				<div class="ui-bar ui-bar-e">
+					<center>
+						<font size="5" face="궁서">금융권에서도 핫한 더존</font>
+					</center>
+				</div>
+				<br/>
+				<li>
+					<iframe width="100%" height="240" src="https://www.youtube.com/embed/z0E42j8X8BY" frameborder="0"></iframe>
+				</li>
+			</div>
+			<div data-role="footer" data-theme="b"></div>
+		</div>
+
+		<div data-role="page" id="gallery">
+			<div data-role="header" data-position="fixed">
+				<a href="#home" data-icon="arrow-l" data-direction="reverse">처음</a>
+				<h1>더존비즈온 앨범</h1>
+			</div>
+			<div data-role="content">
+				<ul class="picture">
+					<li>
+						<a href="dzon1.jpg" rel="external"><img src="dzon1.jpg" /></a>
+					</li>
+					<li>
+						<a href="dzon2.jpg" rel="external"><img src="dzon2.jpg" /></a>
+					</li>
+					<li>
+						<a href="dzon3.jpg" rel="external"><img src="dzon3.jpg" /></a>
+					</li>
+					<li>
+						<a href="dzon4.jpg" rel="external"><img src="dzon4.jpg" /></a>
+					</li>
+					<li>
+						<a href="dzon5.jpg" rel="external"><img src="dzon5.jpg" /></a>
+					</li>
+					<li>
+						<a href="dzon6.jpg" rel="external"><img src="dzon6.jpg" /></a>
+					</li>
+					<li>
+						<a href="dzon7.jpg" rel="external"><img src="dzon7.jpg" /></a>
+					</li>
+					<li>
+						<a href="dzon8.jpg" rel="external"><img src="dzon8.jpg" /></a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</body>
+</html>
